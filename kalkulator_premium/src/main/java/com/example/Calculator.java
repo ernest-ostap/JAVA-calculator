@@ -242,6 +242,12 @@ public class Calculator {
                     case '\b': // Backspace
                         simulateButtonClick("\u2190");
                         break;
+                    case 'C':
+                        simulateButtonClick("C");
+                        break;
+                    case '\u007F' : // Delete
+                        simulateButtonClick("C");
+                        break;
                     case '^':
                         simulateButtonClick("^");
                         break;
